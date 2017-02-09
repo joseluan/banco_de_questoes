@@ -8,10 +8,6 @@ package GUI;
 import BD.Banco;
 import java.sql.SQLException;
 
-/**
- *
- * @author 11659532426
- */
 public class TelaGerar extends javax.swing.JFrame {
 
     /**

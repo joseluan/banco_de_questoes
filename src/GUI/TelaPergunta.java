@@ -4,10 +4,6 @@ package GUI;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-/**
- *
- * @author 11659532426
- */
 public class TelaPergunta extends javax.swing.JFrame {
 
     /**

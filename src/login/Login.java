@@ -10,13 +10,7 @@ import GUI.CadastrarProfessor;
 import GUI.TelaGerar;
 import gui.Professor;
 import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
-/**
- *
- * @author NRTQ
- */
 public class Login extends javax.swing.JFrame {
 
     /**
