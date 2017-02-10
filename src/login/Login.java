@@ -59,7 +59,7 @@ public class Login extends javax.swing.JFrame {
         });
 
         jLabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel1.setText("Usuario: ");
+        jLabel1.setText("Matricula: ");
 
         jLabel2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel2.setText("Senha:");
@@ -109,7 +109,7 @@ public class Login extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel1)
-                                .addGap(18, 18, 18)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(tfusuario, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel2)
@@ -162,7 +162,7 @@ public class Login extends javax.swing.JFrame {
             String matricula = tfusuario.getText();
             if (bp.getSenha(matricula).equals(tfsenha.getText())) {
                 if (bp.getNivel(matricula).equals("1")) {
-                    Professor pf = new Professor("Último login em "+bp.getData(matricula));
+                    Professor pf = new Professor("Último login em "+bp.getData(matricula),bp.getNome(matricula));
                     pf.setVisible(true);
                 }else if(bp.getNivel(matricula).equals("0")){
                     TelaGerar tg = new TelaGerar("Último login em "+bp.getData(matricula),bp.getNome(matricula));

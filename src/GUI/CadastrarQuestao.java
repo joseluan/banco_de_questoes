@@ -10,6 +10,7 @@ import BD.Banco;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 public class CadastrarQuestao extends javax.swing.JFrame {
 
@@ -172,7 +173,7 @@ public class CadastrarQuestao extends javax.swing.JFrame {
             .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        setSize(new java.awt.Dimension(779, 543));
+        setSize(new java.awt.Dimension(779, 530));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -182,6 +183,7 @@ public class CadastrarQuestao extends javax.swing.JFrame {
             b.cadastrarPergunta(textAreapergunta.getText(), textAreareposta.getText(), cbmateria.getSelectedItem().toString());
             b.conn.close();
             this.setVisible(false);
+            JOptionPane.showMessageDialog(null, "Questão cadastrada com sucesso!", "Cadastro", HEIGHT);
         } catch (SQLException ex) {
             Logger.getLogger(CadastrarQuestao.class.getName()).log(Level.SEVERE, null, ex);
             this.setVisible(false);

@@ -129,6 +129,7 @@ public class TelaPergunta extends javax.swing.JFrame {
         jLabel3.setText("Resposta do Professor");
 
         resposta1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        resposta1.setForeground(new java.awt.Color(255, 0, 51));
 
         pergunta1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
 
@@ -145,10 +146,12 @@ public class TelaPergunta extends javax.swing.JFrame {
         pergunta2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
 
         resposta2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        resposta2.setForeground(new java.awt.Color(255, 0, 51));
 
         pergunta3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
 
         resposta3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        resposta3.setForeground(new java.awt.Color(255, 0, 51));
 
         jTextArea3.setColumns(20);
         jTextArea3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
@@ -163,6 +166,7 @@ public class TelaPergunta extends javax.swing.JFrame {
         jScrollPane4.setViewportView(jTextArea4);
 
         resposta4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        resposta4.setForeground(new java.awt.Color(255, 0, 51));
 
         jButton1.setBackground(new java.awt.Color(255, 255, 255));
         jButton1.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
@@ -269,6 +273,7 @@ public class TelaPergunta extends javax.swing.JFrame {
         jLabel9.setText("Resposta do Professor");
 
         resposta5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        resposta5.setForeground(new java.awt.Color(255, 0, 51));
 
         pergunta5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
 
@@ -285,10 +290,12 @@ public class TelaPergunta extends javax.swing.JFrame {
         pergunta6.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
 
         resposta6.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        resposta6.setForeground(new java.awt.Color(255, 0, 51));
 
         pergunta7.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
 
         resposta7.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        resposta7.setForeground(new java.awt.Color(255, 0, 51));
 
         jTextArea9.setColumns(20);
         jTextArea9.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
@@ -303,6 +310,7 @@ public class TelaPergunta extends javax.swing.JFrame {
         jScrollPane12.setViewportView(jTextArea10);
 
         resposta8.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        resposta8.setForeground(new java.awt.Color(255, 0, 51));
 
         jButton3.setBackground(new java.awt.Color(255, 255, 255));
         jButton3.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N

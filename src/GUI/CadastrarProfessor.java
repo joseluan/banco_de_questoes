@@ -6,9 +6,11 @@
 package GUI;
 
 import BD.Banco;
+import static java.awt.image.ImageObserver.HEIGHT;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 public class CadastrarProfessor extends javax.swing.JFrame {
 
@@ -214,6 +216,7 @@ public class CadastrarProfessor extends javax.swing.JFrame {
             b.cadastrarProfAluno(tfnome.getText(), tfmatricula.getText(), tfsenha.getText(), "1");
             b.conn.close();
             this.setVisible(false);
+            JOptionPane.showMessageDialog(null, "Usuário cadastrado com sucesso!", "Cadastro", HEIGHT);
         }else{
             b.cadastrarProfAluno(tfnome.getText(), tfmatricula.getText(), tfsenha.getText(), "0");
             b.conn.close();
