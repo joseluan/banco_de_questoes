@@ -1,6 +1,4 @@
-package gui;
-
-import GUI.TelaGerar;
+package view;
 
 public class Professor extends javax.swing.JFrame {
 
@@ -23,7 +21,6 @@ public class Professor extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(null);
         this.setVisible(false);
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @SuppressWarnings("unchecked")

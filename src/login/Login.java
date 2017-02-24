@@ -5,11 +5,14 @@
  */
 package login;
 
-import BD.Banco;
-import GUI.CadastrarProfessor;
-import GUI.TelaGerar;
-import gui.Professor;
+import banco.Conexao;
+import view.CadastrarProfessor;
+import view.TelaGerar;
+import view.Professor;
 import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import model.Method;
 
 public class Login extends javax.swing.JFrame {
 
@@ -157,25 +160,31 @@ public class Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btentrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btentrarActionPerformed
-        Banco bp = new Banco();
+        Conexao b = null;
+        Method model = null;
+        
         try {
+            b = new Conexao();
+            model = new Method();
             String matricula = tfusuario.getText();
-            if (bp.getSenha(matricula).equals(tfsenha.getText())) {
-                if (bp.getNivel(matricula).equals("1")) {
-                    Professor pf = new Professor("Último login em "+bp.getData(matricula),bp.getNome(matricula));
+            
+            if (model.getSenha(matricula).equals(tfsenha.getText())) {
+                if (model.getNivel(matricula).equals("1")) {
+                    Professor pf = new Professor("Último login em "+model.getData(matricula),model.getNome(matricula));
                     pf.setVisible(true);
-                }else if(bp.getNivel(matricula).equals("0")){
-                    TelaGerar tg = new TelaGerar("Último login em "+bp.getData(matricula),bp.getNome(matricula));
+                }else if(model.getNivel(matricula).equals("0")){
+                    TelaGerar tg = new TelaGerar("Último login em "+model.getData(matricula),model.getNome(matricula));
                     tg.setVisible(true);
                 }
-                bp.atualizaData(matricula);
-                bp.conn.close();
+                model.atualizaData(matricula);
                 this.setVisible(false);
             }
+            
         } catch (SQLException ex) {
             System.out.println("Exceção "+ex.getMessage());
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
     }//GEN-LAST:event_btentrarActionPerformed
 
     private void btcadastrar_professorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btcadastrar_professorActionPerformed
