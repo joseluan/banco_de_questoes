@@ -175,7 +175,9 @@ public class CadastrarQuestao extends javax.swing.JFrame {
     private void btcadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btcadastrarActionPerformed
         Method modelo = new Method();
         try {
-            modelo.cadastrarPergunta(textAreapergunta.getText(), textAreareposta.getText(), cbmateria.getSelectedItem().toString());
+            modelo.cadastrarPergunta(textAreapergunta.getText(),
+                                     textAreareposta.getText(),
+                                     cbmateria.getSelectedItem().toString());
             this.setVisible(false);
             JOptionPane.showMessageDialog(null, "Questão cadastrada com sucesso!", "Cadastro", HEIGHT);
         } catch (SQLException | ClassNotFoundException ex) {

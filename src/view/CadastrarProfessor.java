@@ -207,7 +207,9 @@ public class CadastrarProfessor extends javax.swing.JFrame {
              Method model = new Method();
             if (btrSim.isSelected()) {
                 if (tfsenha.getText().equals(tfsenha1.getText())) {
-                    model.cadastrarProfAluno(tfnome.getText(), tfmatricula.getText(), tfsenha.getText(), "1");
+                    model.cadastrarProfAluno(tfnome.getText(),
+                                             tfmatricula.getText(),
+                                             tfsenha.getText(), "1");
                     this.setVisible(false);
                     JOptionPane.showMessageDialog(null, "Usuário cadastrado com sucesso!", "Cadastro", HEIGHT);
                 }else{
@@ -215,7 +217,9 @@ public class CadastrarProfessor extends javax.swing.JFrame {
                 }
             }else{
                 if (tfsenha.getText().equals(tfsenha1.getText())) {
-                    model.cadastrarProfAluno(tfnome.getText(), tfmatricula.getText(), tfsenha.getText(), "0");
+                    model.cadastrarProfAluno(tfnome.getText(),
+                                             tfmatricula.getText(),
+                                             tfsenha.getText(), "0");
                     this.setVisible(false);
                 }else{
                     JOptionPane.showMessageDialog(null, "As senhas não correspondem!", "Cadastro", HEIGHT);

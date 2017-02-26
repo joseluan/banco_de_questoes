@@ -22,13 +22,13 @@ public class TelaPergunta extends javax.swing.JFrame {
         respostas2 = respostas;
         int contador = 0;
         
-        
         Conexao newConn = new Conexao();
         Connection conexao = newConn.getConn();
-        Statement stmt = conexao.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
+        Statement stmt = conexao.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE,
+                                                 ResultSet.CONCUR_READ_ONLY);
         String sql = "SELECT * FROM questao " +
-                            " where materia = '"+materia+"'"+
-                            " ORDER BY RAND() LIMIT 8;";
+                     " where materia = '"+materia+"'"+
+                     " ORDER BY RAND() LIMIT 8;";
         ResultSet pr = stmt.executeQuery(sql);
   
         while(pr.next()){

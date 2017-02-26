@@ -3,10 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Luan/banco_de_questoes/src/banco/Conexao.java</file>
+            <file>file:/C:/Users/Luan/banco_de_questoes/src/view/Professor.java</file>
+            <file>file:/C:/Users/Luan/banco_de_questoes/src/view/CadastrarQuestao.java</file>
             <file>file:/C:/Users/Luan/banco_de_questoes/src/view/TelaGerar.java</file>
             <file>file:/C:/Users/Luan/banco_de_questoes/src/view/TelaPergunta.java</file>
-            <file>file:/C:/Users/Luan/banco_de_questoes/src/model/Method.java</file>
         </group>
     </open-files>
 </project-private>
